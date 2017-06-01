@@ -1,0 +1,31 @@
+{
+  "name": "CodeScope",
+  "version": "0.0.1",
+  "flags":[{"big-project": "big project that has 1000+ files."},
+    {"skip-comments":"scoper strips off comments before making the internal database."},
+    {"with-listed-directories-only":"allows to work only in a limited directory set."},
+    {"skip-hidden-files":"files that starts with dot (.) are hidden. You may want to skip them."}
+  ],
+  "languages":[
+    {
+      "extensions":[".go"],
+      "keywords":[
+        "break",        "default",      "func",         "interface",    "select",
+        "case",         "defer",        "go",           "map",          "struct",
+        "chan",         "else",         "goto",         "package",      "switch",
+        "const",        "fallthrough",  "if",           "range",        "type",
+        "continue",     "for",          "import",       "return",       "var"],
+      "operators":[
+        "+",    "&",     "+=",    "&=",     "&&",    "==",    "!=",   "(",    ")",
+        "-",   "|",     "-=",    "|=",     "||",    "<",     "<=",    "[",    "]",
+        "*",    "^",     "*=",    "^=",     "<-",    ">",     ">=",    "{",    "}",
+        "/",    "<<",    "/=",    "<<=",    "++",    "= ",    ":=",    ",",    ";",
+        "%",    ">>",    "%=",    ">>=",    "--",    "!",     "...",   ".",    ":",
+        "&^",   "&^="],
+      "ignore_dirs":["github.com", "golang.org", "gopkg.in"],
+      "functionArgStart":"(",
+      "functionArgEnd":")",
+      "whitespace": ["\t", "\r", "\n", "\r\n",  ", ",   ",", "\"", "`", "\\", "\\\\", "/*", "*/"]
+    }
+  ]
+}
